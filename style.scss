@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(91, 159, 91);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 20% / 1);
+}
+
+.bagian1 {
+  background-color: #90dea7;
+}
+.navbar {
+  background-color: #90dea7 !important;
+  height: 90px;
+  //   border-bottom: 2px solid rgb(205, 205, 205);
+  box-shadow: 2px 2px 2px 2px rgba($color: #90dea7, $alpha: 0.3);
+  .container {
+    color: #fefefe;
+    .bungkus {
+      .navigasi {
+        a {
+          margin-right: 20px;
+          transition: 0.4 linear;
+          font-weight: bolder;
+          border-radius: 4px;
+        }
+        a:hover {
+          background-color: #1d2b5e;
+          color: #fefefe;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  //   min-height: 100vh;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   background-size: cover;
+  background-size: cover;
+  height: 1032px;
+  width: 100%;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  position: relative;
+  color: rgb(255, 255, 255);
+
+  .color-overlay {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 42%;
+    left: 10%;
+    h2 {
+      font-size: 70px;
+    }
+    p {
+      font-size: 26.3px;
+    }
+  }
+
+  //   margin-left: 10px;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  margin-top: 9rem;
+  padding-left: 7.1rem;
+  gap: 20px;
+  padding-top: 20px;
+
+  .時間 {
+    background-color: #fffafa;
+    width: 70%;
+    box-shadow: 8px 9px 10px 0px rgba($color: #cfcfcf, $alpha: 1);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .場所 {
+    background-color: #fffafa;
+    width: 70%;
+    box-shadow: 8px 9px 10px 0px rgba($color: #cfcfcf, $alpha: 1);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .contact {
+    background-color: #fffafa;
+    width: 70%;
+    box-shadow: 8px 9px 10px 0px rgba($color: #cfcfcf, $alpha: 1);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  i {
+    color: #54c293;
+    font-size: 40px;
+  }
+}
+
+#story {
+  margin-top: 200px;
+  color: #fff;
+  .container {
+    color: #fff;
+    padding: 1rem 1rem;
+    h2 {
+      margin-top: 5.4rem;
+      margin-bottom: 10rem;
+      padding: 20px;
+      border-radius: 20px;
+      // border: 12px solid #1d2b5e;
+    }
+    .row {
+      p {
+        font-size: 26.3px;
+        // text-align: justify;
+      }
+    }
+  }
+
+  .leader {
+    margin: auto;
+    padding-bottom: 3.7rem;
+    .名前 {
+      margin-top: 2.3rem;
+      width: 210px;
+      padding: 1rem 1rem;
+      border-radius: 25px;
+      background-image: linear-gradient(to top right, #2dbbbb, #4fda78);
+      transition: 0.3s linear;
+    }
+
+    .名前:hover {
+      cursor: pointer;
+      background-color: #1d2b5e;
+    }
+
+    p {
+      margin-top: 2rem;
+      text-align: center;
+      width: 55%;
+      font-size: 1.6rem;
+      padding: 20px;
+    }
+  }
+}
+
+#style {
+  background-color: #1d2b5e;
+  background-image: linear-gradient(to top right, #6e63bf, #2ed165);
+  margin-top: -10px;
+  height: auto;
+  h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 25px;
+  }
+  .model {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 1.2rem;
+    padding: 2px;
+    border: 11px solid transparent;
+    border-image: linear-gradient(-45deg, #6e63bf, #2ed165);
+    border-image-slice: 1;
+    .card {
+      margin-left: -45px;
+      img {
+        height: 309px;
+      }
+    }
+    .btn {
+      color: #fff;
+      background-color: #199d52;
+      transition: 0.4s linear;
+      // background-image: linear-gradient(to left top, #63b4bf, #2ed165);
+    }
+    .btn:hover {
+      background-image: linear-gradient(to left top, #63b4bf, #2ed165);
+
+      color: #0c5297;
+    }
+  }
+
+  .containerss {
+    padding: 9px;
+    h1 {
+      color: #ffffff;
+    }
+  }
+
+  #services {
+    background-image: linear-gradient(to bottom left, #63b4bf, #6dd48f);
+    height: auto;
+    padding-top: 7.2rem;
+    padding-bottom: 6.7rem;
+    .judul {
+      text-align: center;
+      font-size: 60px;
+      background-image: linear-gradient(to top right, #63b4bf, #6dd48f);
+      border-radius: 20px;
+      width: 60%;
+      padding: 1.2rem 0;
+      margin: auto;
+      margin-bottom: 50px;
+      color: white;
+    }
+    .bungkus {
+      padding: 20px 1.2rem;
+      color: #fff;
+      font-size: 30px;
+      background-color: #4aa471;
+      width: 60%;
+      border-radius: 20px;
+      margin: auto;
+      .nitsuite {
+        border-radius: 20px;
+        border: 10px dashed rgb(44, 89, 60);
+      }
+      .hitotsume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
+
+        p {
+          // width: 25%;
+        }
+      }
+      .futatsume {
+        margin-top: 3.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
+        p {
+          // width: 25%;
+        }
+      }
+      .gallery {
+        display: grid;
+        justify-items: center;
+
+        h1 {
+          margin-top: 14.2rem;
+          margin-bottom: 4.6rem;
+          border-radius: 30px;
+          background-image: linear-gradient(to right top, #36d2c0, #8ad7a4);
+          padding: 1.2rem;
+        }
+        img {
+          width: 202px;
+          border: 5px solid rgb(61, 94, 61);
+        }
+      }
+      // koko kara
+      .team {
+        margin-top: 200px;
+        font-size: 24px;
+        h3 {
+          padding: 30px 0;
+        }
+        .people {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          justify-content: space-between;
+          gap: 30px;
+          h4 {
+            color: #0c5297;
+          }
+          a {
+            color: white;
+          }
+          .people1 {
+            // width: 150px;
+            // padding: 20px;
+            text-align: center;
+            h3 {
+            }
+            img {
+              border: 10px solid hsl(173, 63%, 52%);
+              width: 300px;
+            }
+          }
+          .people2 {
+            // padding: 20px;
+
+            text-align: center;
+            // background-color: #8ad7a4;
+            h3 {
+            }
+            img {
+              border: 10px solid #36d2c0;
+              width: 300px;
+            }
+          }
+          .people3 {
+            // padding: 20px;
+            // background-color: #8ad7a4;
+            text-align: center;
+            h3 {
+            }
+            img {
+              border: 10px solid #36d2c0;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+    // koko made
+  }
+}
+
+#reviews {
+  background-image: linear-gradient(to bottom right, #708dd5, #1cbe85);
+  height: auto;
+  padding-bottom: 11.2rem;
+  .tanggapan {
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+  }
+  .konten {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    justify-items: center;
+    gap: 60px;
+    .review {
+      display: flex;
+      align-items: center;
+      padding: 1.4rem;
+      width: auto;
+      height: auto;
+      background-color: #fefefe;
+      width: 540px;
+      gap: 0.5rem;
+      line-height: 30px;
+      border-radius: 40px;
+      // text-align: justify;
+      h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: lighter;
+      }
+      img {
+        border-radius: 50%;
+        width: 130px;
+      }
+    }
+  }
+}
+
+#location {
+  background-image: linear-gradient(to top right, #708dd5, #1cbe85);
+  color: #533c96;
+  height: auto;
+  padding-bottom: 11.2rem;
+  .bungkus {
+    text-align: center;
+    h1,
+    p {
+      padding: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .pembungkus {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      align-items: center;
+    }
+  }
+  .konten2 {
+    input {
+      display: block;
+      font-size: 20px;
+      padding: 1rem 1.4rem;
+      margin: 20px;
+      width: 80%;
+    }
+    button {
+      padding: 10px 20px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #1d2b5e;
+  padding: 1.1rem;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s linear;
+  }
+
+  a:hover {
+    color: #1cbe85;
+  }
+}
+
+@media screen and (max-width: 1393px) {
+  .header {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  .header {
+    height: 80vh;
+    background-position-x: -360px;
+  }
+  #story {
+    .container {
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .header {
+    height: 79vh;
+  }
+  #location {
+    .bungkus {
+      .pembungkus {
+        iframe {
+          width: 300px;
+          height: 300px;
+        }
+        .konten2 {
+          input {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    .color-overlay {
+      h2 {
+        font-size: 42px;
+      }
+    }
+    height: 90vh;
+    background-position-x: -310px;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .leader {
+    p {
+      width: 100% !important;
+      font-size: 22px !important;
+    }
+  }
+
+  #services {
+    h4 {
+      font-size: 22px !important;
+    }
+    .bungkus {
+      width: 80% !important;
+      img {
+        width: 240px !important;
+      }
+      .setsumei {
+        font-size: 20px;
+      }
+    }
+  }
+  #reviews {
+    .konten {
+      .review {
+        padding: 12px;
+        width: 97% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    .color-overlay {
+      h2 {
+        font-size: 42px;
+      }
+    }
+    height: 90vh;
+    background-position-x: -410px;
+  }
+
+  #story {
+    .container {
+      h2 {
+        font-size: 20px;
+      }
+      .row {
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .leader {
+    p {
+      width: 100% !important;
+      font-size: 22px !important;
+    }
+  }
+
+  #services {
+    h4 {
+      font-size: 22px !important;
+    }
+    .bungkus {
+      width: 80% !important;
+      img {
+        width: 240px !important;
+      }
+      .setsumei {
+        font-size: 20px;
+      }
+    }
+  }
+  #reviews {
+    .konten {
+      .review {
+        padding: 12px;
+        width: 97% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .bagian1 {
+    .navbar {
+      background-color: #669175 !important;
+      .bungkus {
+        background-color: #669175;
+        a {
+          color: #1d2b5e;
+          text-align: center;
+        }
+        #yutub {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #location {
+    .bungkus {
+      .pembungkus {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 931px) {
+  #services {
+    .bungkus {
+      background-color: #0c5297;
+      img {
+        width: 270px;
+      }
+      .hitotsume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7rem;
+      }
+      .futatsume {
+        margin-top: 3.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  #services {
+    .team {
+      .people {
+        h3,
+        p,
+        h4 {
+          font-size: 20px;
+          width: 220px;
+        }
+        img {
+          margin-left: -62px;
+          width: 190px !important;
+          justify-content: baseline;
+        }
+
+        i {
+          margin-left: -70px;
+        }
+        .people3 {
+          img {
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 953px) {
+  #reviews {
+    .konten {
+      display: flex;
+      flex-direction: column;
+      .review {
+        // padding: 20px;
+        margin: auto;
+        width: 362px;
+        gap: 0.4rem;
+        // text-align: justify;
+        h1 {
+          font-size: 30px;
+          text-align: center;
+        }
+        h4 {
+          font-size: 20px;
+          text-align: center;
+          font-weight: lighter;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

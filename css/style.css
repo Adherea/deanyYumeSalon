@@ -1,0 +1,568 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(91, 159, 91);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(120, 100%, 20%);
+}
+
+.bagian1 {
+  background-color: #90dea7;
+}
+
+.navbar {
+  background-color: #90dea7 !important;
+  height: 90px;
+  box-shadow: 2px 2px 2px 2px rgba(144, 222, 167, 0.3);
+}
+.navbar .container {
+  color: #fefefe;
+}
+.navbar .container .bungkus .navigasi a {
+  margin-right: 20px;
+  transition: 0.4 linear;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+.navbar .container .bungkus .navigasi a:hover {
+  background-color: #1d2b5e;
+  color: #fefefe;
+}
+
+.header {
+  background-size: cover;
+  height: 1032px;
+  width: 100%;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.header .color-overlay {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 42%;
+  left: 10%;
+}
+.header .color-overlay h2 {
+  font-size: 70px;
+}
+.header .color-overlay p {
+  font-size: 26.3px;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  margin-top: 9rem;
+  padding-left: 7.1rem;
+  gap: 20px;
+  padding-top: 20px;
+}
+.information .時間 {
+  background-color: #fffafa;
+  width: 70%;
+  box-shadow: 8px 9px 10px 0px #cfcfcf;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.information .場所 {
+  background-color: #fffafa;
+  width: 70%;
+  box-shadow: 8px 9px 10px 0px #cfcfcf;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.information .contact {
+  background-color: #fffafa;
+  width: 70%;
+  box-shadow: 8px 9px 10px 0px #cfcfcf;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.information i {
+  color: #54c293;
+  font-size: 40px;
+}
+
+#story {
+  margin-top: 200px;
+  color: #fff;
+}
+#story .container {
+  color: #fff;
+  padding: 1rem 1rem;
+}
+#story .container h2 {
+  margin-top: 5.4rem;
+  margin-bottom: 10rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+#story .container .row p {
+  font-size: 26.3px;
+}
+#story .leader {
+  margin: auto;
+  padding-bottom: 3.7rem;
+}
+#story .leader .名前 {
+  margin-top: 2.3rem;
+  width: 210px;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to top right, #2dbbbb, #4fda78);
+  transition: 0.3s linear;
+}
+#story .leader .名前:hover {
+  cursor: pointer;
+  background-color: #1d2b5e;
+}
+#story .leader p {
+  margin-top: 2rem;
+  text-align: center;
+  width: 55%;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+#style {
+  background-color: #1d2b5e;
+  background-image: linear-gradient(to top right, #6e63bf, #2ed165);
+  margin-top: -10px;
+  height: auto;
+}
+#style h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 25px;
+}
+#style .model {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  gap: 1.2rem;
+  padding: 2px;
+  border: 11px solid transparent;
+  -o-border-image: linear-gradient(-45deg, #6e63bf, #2ed165);
+     border-image: linear-gradient(-45deg, #6e63bf, #2ed165);
+  border-image-slice: 1;
+}
+#style .model .card {
+  margin-left: -45px;
+}
+#style .model .card img {
+  height: 309px;
+}
+#style .model .btn {
+  color: #fff;
+  background-color: #199d52;
+  transition: 0.4s linear;
+}
+#style .model .btn:hover {
+  background-image: linear-gradient(to left top, #63b4bf, #2ed165);
+  color: #0c5297;
+}
+#style .containerss {
+  padding: 9px;
+}
+#style .containerss h1 {
+  color: #ffffff;
+}
+#style #services {
+  background-image: linear-gradient(to bottom left, #63b4bf, #6dd48f);
+  height: auto;
+  padding-top: 7.2rem;
+  padding-bottom: 6.7rem;
+}
+#style #services .judul {
+  text-align: center;
+  font-size: 60px;
+  background-image: linear-gradient(to top right, #63b4bf, #6dd48f);
+  border-radius: 20px;
+  width: 60%;
+  padding: 1.2rem 0;
+  margin: auto;
+  margin-bottom: 50px;
+  color: white;
+}
+#style #services .bungkus {
+  padding: 20px 1.2rem;
+  color: #fff;
+  font-size: 30px;
+  background-color: #4aa471;
+  width: 60%;
+  border-radius: 20px;
+  margin: auto;
+}
+#style #services .bungkus .nitsuite {
+  border-radius: 20px;
+  border: 10px dashed rgb(44, 89, 60);
+}
+#style #services .bungkus .hitotsume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+#style #services .bungkus .futatsume {
+  margin-top: 3.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+#style #services .bungkus .gallery {
+  display: grid;
+  justify-items: center;
+}
+#style #services .bungkus .gallery h1 {
+  margin-top: 14.2rem;
+  margin-bottom: 4.6rem;
+  border-radius: 30px;
+  background-image: linear-gradient(to right top, #36d2c0, #8ad7a4);
+  padding: 1.2rem;
+}
+#style #services .bungkus .gallery img {
+  width: 202px;
+  border: 5px solid rgb(61, 94, 61);
+}
+#style #services .bungkus .team {
+  margin-top: 200px;
+  font-size: 24px;
+}
+#style #services .bungkus .team h3 {
+  padding: 30px 0;
+}
+#style #services .bungkus .team .people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-between;
+  gap: 30px;
+}
+#style #services .bungkus .team .people h4 {
+  color: #0c5297;
+}
+#style #services .bungkus .team .people a {
+  color: white;
+}
+#style #services .bungkus .team .people .people1 {
+  text-align: center;
+}
+#style #services .bungkus .team .people .people1 img {
+  border: 10px solid hsl(173, 63%, 52%);
+  width: 300px;
+}
+#style #services .bungkus .team .people .people2 {
+  text-align: center;
+}
+#style #services .bungkus .team .people .people2 img {
+  border: 10px solid #36d2c0;
+  width: 300px;
+}
+#style #services .bungkus .team .people .people3 {
+  text-align: center;
+}
+#style #services .bungkus .team .people .people3 img {
+  border: 10px solid #36d2c0;
+  width: 300px;
+}
+
+#reviews {
+  background-image: linear-gradient(to bottom right, #708dd5, #1cbe85);
+  height: auto;
+  padding-bottom: 11.2rem;
+}
+#reviews .tanggapan {
+  text-align: center;
+  color: #fff;
+  padding-top: 200px;
+}
+#reviews .konten {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  justify-items: center;
+  gap: 60px;
+}
+#reviews .konten .review {
+  display: flex;
+  align-items: center;
+  padding: 1.4rem;
+  width: auto;
+  height: auto;
+  background-color: #fefefe;
+  width: 540px;
+  gap: 0.5rem;
+  line-height: 30px;
+  border-radius: 40px;
+}
+#reviews .konten .review h1 {
+  font-size: 30px;
+  text-align: center;
+}
+#reviews .konten .review h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+#reviews .konten .review img {
+  border-radius: 50%;
+  width: 130px;
+}
+
+#location {
+  background-image: linear-gradient(to top right, #708dd5, #1cbe85);
+  color: #533c96;
+  height: auto;
+  padding-bottom: 11.2rem;
+}
+#location .bungkus {
+  text-align: center;
+}
+#location .bungkus h1,
+#location .bungkus p {
+  padding: 20px;
+}
+#location .bungkus p {
+  font-size: 20px;
+}
+#location .bungkus .pembungkus {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  align-items: center;
+}
+#location .konten2 input {
+  display: block;
+  font-size: 20px;
+  padding: 1rem 1.4rem;
+  margin: 20px;
+  width: 80%;
+}
+#location .konten2 button {
+  padding: 10px 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #1d2b5e;
+  padding: 1.1rem;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s linear;
+}
+footer a:hover {
+  color: #1cbe85;
+}
+
+@media screen and (max-width: 1393px) {
+  .header {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 983px) {
+  .header {
+    height: 80vh;
+    background-position-x: -360px;
+  }
+  #story .container h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 586px) {
+  .header {
+    height: 79vh;
+  }
+  #location .bungkus .pembungkus iframe {
+    width: 300px;
+    height: 300px;
+  }
+  #location .bungkus .pembungkus .konten2 input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header {
+    height: 90vh;
+    background-position-x: -310px;
+  }
+  .header .color-overlay h2 {
+    font-size: 42px;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .leader p {
+    width: 100% !important;
+    font-size: 22px !important;
+  }
+  #services h4 {
+    font-size: 22px !important;
+  }
+  #services .bungkus {
+    width: 80% !important;
+  }
+  #services .bungkus img {
+    width: 240px !important;
+  }
+  #services .bungkus .setsumei {
+    font-size: 20px;
+  }
+  #reviews .konten .review {
+    padding: 12px;
+    width: 97% !important;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header {
+    height: 90vh;
+    background-position-x: -410px;
+  }
+  .header .color-overlay h2 {
+    font-size: 42px;
+  }
+  #story .container h2 {
+    font-size: 20px;
+  }
+  #story .container .row p {
+    font-size: 24px;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .leader p {
+    width: 100% !important;
+    font-size: 22px !important;
+  }
+  #services h4 {
+    font-size: 22px !important;
+  }
+  #services .bungkus {
+    width: 80% !important;
+  }
+  #services .bungkus img {
+    width: 240px !important;
+  }
+  #services .bungkus .setsumei {
+    font-size: 20px;
+  }
+  #reviews .konten .review {
+    padding: 12px;
+    width: 97% !important;
+  }
+}
+@media screen and (max-width: 986px) {
+  .bagian1 .navbar {
+    background-color: #669175 !important;
+  }
+  .bagian1 .navbar .bungkus {
+    background-color: #669175;
+  }
+  .bagian1 .navbar .bungkus a {
+    color: #1d2b5e;
+    text-align: center;
+  }
+  .bagian1 .navbar .bungkus #yutub {
+    display: none;
+  }
+  #location .bungkus .pembungkus {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 931px) {
+  #services .bungkus {
+    background-color: #0c5297;
+  }
+  #services .bungkus img {
+    width: 270px;
+  }
+  #services .bungkus .hitotsume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+  }
+  #services .bungkus .futatsume {
+    margin-top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  #services .team .people h3,
+  #services .team .people p,
+  #services .team .people h4 {
+    font-size: 20px;
+    width: 220px;
+  }
+  #services .team .people img {
+    margin-left: -62px;
+    width: 190px !important;
+    justify-content: baseline;
+  }
+  #services .team .people i {
+    margin-left: -70px;
+  }
+  #services .team .people .people3 img {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 953px) {
+  #reviews .konten {
+    display: flex;
+    flex-direction: column;
+  }
+  #reviews .konten .review {
+    margin: auto;
+    width: 362px;
+    gap: 0.4rem;
+  }
+  #reviews .konten .review h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  #reviews .konten .review h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+  }
+  #reviews .konten .review p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
